@@ -1,12 +1,19 @@
 ﻿using System;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Builder;
 
-namespace ConsoleApplication
+namespace StatlerWaldorfCorp.TeamService
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseStartup<Startup>()                
+                .Build();
+
+            host.Run();
         }
     }
 }
