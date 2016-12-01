@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 
-namespace StatlerWaldorfCorp.TeamService
+namespace StatlerWaldorfCorp.PetRegistry
 {
     public class Program
     {

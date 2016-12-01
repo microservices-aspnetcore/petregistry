@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace StatlerWaldorfCorp.TeamService
+namespace StatlerWaldorfCorp.PetRegistry
 {
 	[Route("[controller]")]    
     public class PetController : Controller
