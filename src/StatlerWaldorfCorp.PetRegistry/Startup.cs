@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using StatlerWaldorfCorp.PetRegistry.Persistence;
 
 namespace StatlerWaldorfCorp.PetRegistry
 {
@@ -7,7 +8,8 @@ namespace StatlerWaldorfCorp.PetRegistry
     {
         public void ConfigureServices(IServiceCollection services)
         {
-	        services.AddMvc();            
+            services.AddScoped<IPetRepository, MemoryPetRepository>();            
+	        services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app)
